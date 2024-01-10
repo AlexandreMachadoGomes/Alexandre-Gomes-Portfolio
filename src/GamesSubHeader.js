@@ -13,7 +13,7 @@ const GamesSubHeader = () => {
 
 
 
-    if (location.pathname.startsWith('/my-games')) {
+    if (location.pathname.startsWith('/Alexandre-Gomes-Portfolio/my-games')) {
         return (
             <div className="games-subheader">
                 <Link to="/Alexandre-Gomes-Portfolio/my-games/game1" className={`game-link ${clicked ? 'game-link-clicked' : ''}`} onClick={handleClick}>
