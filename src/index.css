@@ -68,6 +68,7 @@ header {
     left: 0;
     z-index: 500;
     overflow-y: auto;
+    animation: slideInFromLeft 0.5s ease-out forwards;
 }
 
 .game-link {
@@ -77,6 +78,16 @@ header {
     margin-bottom: 20px;
     text-decoration: none;
     color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.game-link:hover {
+    transform: scale(1.05); /* Slightly enlarge the element */
+}
+
+.game-link-clicked {
+    transform: scale(0.8); /* Shrink to 80% of its size */
+    transition: transform 0.2s ease;
 }
 
 .game-thumbnail {
@@ -130,6 +141,16 @@ footer {
 }
 
 
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
 
 
 
