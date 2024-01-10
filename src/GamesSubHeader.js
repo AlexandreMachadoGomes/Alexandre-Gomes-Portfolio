@@ -16,15 +16,15 @@ const GamesSubHeader = () => {
     if (location.pathname.startsWith('/my-games')) {
         return (
             <div className="games-subheader">
-                <Link to="/my-games/game1" className={`game-link ${clicked ? 'game-link-clicked' : ''}`} onClick={handleClick}>
+                <Link to="/Alexandre-Gomes-Portfolio/my-games/game1" className={`game-link ${clicked ? 'game-link-clicked' : ''}`} onClick={handleClick}>
                     <img src="/Envrion.jpg" alt="Envrion" className="game-thumbnail" />
                     <span>Envrion</span>
                 </Link>
-                <Link to="/my-games/game1" className={`game-link ${clicked ? 'game-link-clicked' : ''}`} onClick={handleClick}>
+                <Link to="/Alexandre-Gomes-Portfolio/my-games/game1" className={`game-link ${clicked ? 'game-link-clicked' : ''}`} onClick={handleClick}>
                     <img src="/Envrion.jpg" alt="Envrion" className="game-thumbnail" />
                     <span>Envrion</span>
                 </Link>
-                <Link to="/my-games/game1" className={`game-link ${clicked ? 'game-link-clicked' : ''}`} onClick={handleClick}>
+                <Link to="/Alexandre-Gomes-Portfolio/my-games/game1" className={`game-link ${clicked ? 'game-link-clicked' : ''}`} onClick={handleClick}>
                     <img src="/Envrion.jpg" alt="Envrion" className="game-thumbnail" />
                     <span>Envrion</span>
                 </Link>

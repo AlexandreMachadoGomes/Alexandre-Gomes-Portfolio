@@ -17,14 +17,14 @@ const App = () => {
                     <GamesSubHeader />
                     <div className="content-container">
                         <Routes>
-                            <Route path="/" element={<div />} />
-                            <Route path="/my-games" element={<div />} />
-                            <Route path="/full-stack-shenanigans" element={<div />} />
-                            <Route path="/contact" element={<div />} />
+                            <Route path="/Alexandre-Gomes-Portfolio" element={<div />} />
+                            <Route path="/Alexandre-Gomes-Portfolio/my-games" element={<div />} />
+                            <Route path="/Alexandre-Gomes-Portfolio/full-stack-shenanigans" element={<div />} />
+                            <Route path="/Alexandre-Gomes-Portfolio/contact" element={<div />} />
 
-                            <Route path="/my-games/game1" element={<div className="game-container"><Game /></div>} />
-                            <Route path="/my-games/game2" element={<div className="game-container"><Game /></div>} />
-                            <Route path="/my-games/game3" element={<div className="game-container"><Game /></div>} />
+                            <Route path="/Alexandre-Gomes-Portfolio/my-games/game1" element={<div className="game-container"><Game /></div>} />
+                            <Route path="/Alexandre-Gomes-Portfolio/my-games/game2" element={<div className="game-container"><Game /></div>} />
+                            <Route path="/Alexandre-Gomes-Portfolio/my-games/game3" element={<div className="game-container"><Game /></div>} />
                         </Routes>
                     </div>
                     <Footer />
