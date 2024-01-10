@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './Header';
+import Footer from './Footer';
+import Game from './Game';
+import GamesSubHeader from './GamesSubHeader';
+import FloatingCircles from './FloatingCircles';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div id="root">
+            <Router>
+                <FloatingCircles/>
+
+                <Header />
+
+                <div className="flex-container">
+                    <GamesSubHeader />
+                    <div className="content-container">
+                        <Routes>
+                            <Route path="/" element={<div />} />
+                            <Route path="/my-games" element={<div />} />
+                            <Route path="/full-stack-shenanigans" element={<div />} />
+                            <Route path="/contact" element={<div />} />
+
+                            <Route path="/my-games/game1" element={<div className="game-container"><Game /></div>} />
+                            <Route path="/my-games/game2" element={<div className="game-container"><Game /></div>} />
+                            <Route path="/my-games/game3" element={<div className="game-container"><Game /></div>} />
+                        </Routes>
+                    </div>
+                    <Footer />
+                </div>
+            </Router>
+        </div>
+    );
+};
 
 export default App;
