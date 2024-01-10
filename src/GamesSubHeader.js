@@ -17,15 +17,15 @@ const GamesSubHeader = () => {
         return (
             <div className="games-subheader">
                 <Link to="/Alexandre-Gomes-Portfolio/my-games/game1" className={`game-link ${clicked ? 'game-link-clicked' : ''}`} onClick={handleClick}>
-                    <img src="/Envrion.jpg" alt="Envrion" className="game-thumbnail" />
+                    <img src={`${process.env.PUBLIC_URL}` + "/Envrion.jpg"} alt="Envrion" className="game-thumbnail" />
                     <span>Envrion</span>
                 </Link>
                 <Link to="/Alexandre-Gomes-Portfolio/my-games/game1" className={`game-link ${clicked ? 'game-link-clicked' : ''}`} onClick={handleClick}>
-                    <img src="/Envrion.jpg" alt="Envrion" className="game-thumbnail" />
+                    <img src={`${process.env.PUBLIC_URL}` + "/Envrion.jpg"} alt="Envrion" className="game-thumbnail" />
                     <span>Envrion</span>
                 </Link>
                 <Link to="/Alexandre-Gomes-Portfolio/my-games/game1" className={`game-link ${clicked ? 'game-link-clicked' : ''}`} onClick={handleClick}>
-                    <img src="/Envrion.jpg" alt="Envrion" className="game-thumbnail" />
+                    <img src={`${process.env.PUBLIC_URL}` + "/Envrion.jpg"} alt="Envrion" className="game-thumbnail" />
                     <span>Envrion</span>
                 </Link>
             </div>
